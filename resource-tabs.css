@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.resourceTabs.nav-tabs > li  {width:25%; text-align:center;}
+
+
+.resourceTabs {margin-top:30px;}
+.resourceTabs i { font-size: 3em}
+.resourceTabs li .customResourceIcon {background-color:#00abec/*#795f85*/;}
+.resourceTabs li:nth-child(2) .customResourceIcon { background-color:#8d1360;}
+.resourceTabs li:nth-child(3) .customResourceIcon { background-color:#f38833;}
+.resourceTabs li:nth-child(4) .customResourceIcon { background-color:#0db1a6;}
+.resourceTabs.nav-tabs > li > a > span {font-weight:600; font-size:1.4em;}
+
+.resourceTabsContent li > a{font-weight:600; color:#333333;}
+.resourceTabsContent li > ul > li > a{font-weight:300;}
+.resourceTabsContent.tab-content {padding:20px; border: 1px solid lightGray; border-top:none;}
+
+
+
+.customResourceIcon {
+  padding:20px;
+  -webkit-border-radius:1100%;
+  -moz-border-radius:100%;
+  -o-border-radius:100%;
+  border-radius:100%;
+  border:4px solid #fff;
+  color:#fff;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+  text-align:center;
+  display:table-cell;
+  vertical-align:middle;
+  width:100px;
+  height:100px;
+}
+.ResourceIconWrapper {  display:inline-block; margin-bottom: 10px;}
+
+
+
+@media all and (max-width:724px){
+.resourceTabs.nav-tabs > li > a > span {display:none;}	
+.resourceTabs.nav-tabs > li > a {padding: 5px 5px;}
+.resourceTabs i { font-size: 1.5em}
+.customResourceIcon {  padding:15px;  border:2px solid #fff;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.46);  width:60px;  height:60px;}	
+	
+}
+/* ---------------------------------------------------------------------------------------------------
+NO TABS styles
+------------------------------------------------------------------------------------------------------*/
+.headingLinks {margin:15px auto 15px auto;}
+.headingLinks .ResourceIconWrapper {margin:5px auto auto 20px;text-align: center;}
+.headingLinks h3 { color:#0073bc; font-weight:600; margin-top:0px; margin-bottom:0; padding:6px 4px 6px 0px;}
+
+.headingLinks .linksIcon {font-size:2.5em;}
+.headingLinks i.colorBlue {background-color:#0073bc;}
+.headingLinks h3.colorBlue {color:#0073bc;}
+.headingLinks i.colorPlump {background-color:#8d1360;}
+.headingLinks h3.colorPlump {color:#8d1360;}
+.headingLinks i.colorOrange {background-color:#f38833;}
+.headingLinks h3.colorOrange {color:#f38833;}
+.headingLinks i.colorGreen {background-color:#0db1a6;}
+.headingLinks h3.colorGreen {color:#0db1a6;}
+.headingLinks .linksIcon {
+  padding:5px;
+  -webkit-border-radius:1100%;
+  -moz-border-radius:100%;
+  -o-border-radius:100%;
+  border-radius:100%;
+  border:4px solid #fff;
+  color:#fff;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+  text-align:center;
+  display:table-cell;
+  vertical-align:middle;
+  width:80px;
+  height:80px;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  -o-transition:.5s;
+  transition:.5s;
+}
+
+.headingLinks i.colorBlue:hover {  background: #01426c;}
+.headingLinks i.colorPlump:hover {  background: #620b3d;}
+.headingLinks i.colorOrange:hover {  background: #a35619;}
+.headingLinks i.colorGreen:hover {  background: #096862;}
+
+
+.panel-blue > .panel-heading { color: #FFF; background-color: #0073bc; border-color: #0063a2;}
+.panel-plump > .panel-heading { color: #FFF; background-color: #8d1360; border-color: #880D53;}
+.panel-orange > .panel-heading { color: #FFF; background-color: #f38833; border-color: #df7c2d;}
+.panel-green > .panel-heading { color: #FFF; background-color: #0db1a6; border-color: #099f95;}
+.panel-blue > .panel-heading i, .panel-plump > .panel-heading i, .panel-orange > .panel-heading i, .panel-green > .panel-heading i {padding-right:.5em; font-size:1.4em;}
+.panel-blue > .panel-heading h2, .panel-plump > .panel-heading h2, .panel-orange > .panel-heading h2, .panel-green > .panel-heading h2{font-weight:600; letter-spacing: 1px;}
+.panel-blue { background-color: #f3faff;    border-color: #0063a2;}
+.panel-plump { background-color: #fff1fa;    border-color: #880D53;}
+.panel-orange { background-color: #fff4eb;    border-color: #df7c2d;}
+.panel-green { background-color: #eafffe;    border-color: #099f95;}
+.panel-blue li > a, .panel-plump li > a, .panel-orange li > a, .panel-green li > a {font-weight:600; color:#333333;}
+.panel-blue li > ul > li > a, .panel-plump li > ul > li > a, .panel-orange li > ul > li > a, .panel-green li > ul > li > a{font-weight:300;}
+
+
+.panel-heading h2 > a > i.topArrow { float: right;padding-right: 0;}
+
+@media all and (max-width:724px){
+.headingLinks .ResourceIconWrapper { margin:0 auto;}
+.headingLinks h3 { font-size:1.4em; }
+.headingLinks i.linksIcon {font-size:2em;}
+.headingLinks i.linksIcon {  padding:15px;  border:2px solid #fff;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.46);  width:60px;  height:60px;}	
+	
+}

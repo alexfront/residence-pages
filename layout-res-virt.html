@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Virtual Tour - Layout - residence page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- jQuery CDN -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<!-- jQuery UI CDN -->  
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+
+
+<!-- Botstrap CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+
+<!-- custom css -->
+<link href="layout.css" rel="stylesheet" type="text/css">
+<!-- custom js -->
+<script src="layout.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6 col-md-4">
+			<!-- request from Thea (margin top and bottom)-->
+				<img class="logoEn img-responsive" src="http://chartwell.com/Portals/0/chart-logo-2014.png" alt="Chartwell Logo"/></div>
+		<div class="col-sm-2 col-md-4"></div>
+		<div class="col-xs-4 col-md-4 text-center hidden-print" style="padding: 10px;">English | Français
+		</div>
+	</div>
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Help Me Choose</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Care and Services <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Care Options</a></li>
+            <li><a href="#">Support Services</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Active Living</a></li>
+        <li><a href="#">Finance</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Careers</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Investor Relations</a>
+          
+        </li>
+      </ul>-->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid searchBar hidden-print">
+	<div class="container">
+		<div class="row text-center"><h4>Find a Residence</h4></div>
+	<div class="row">
+		<div class="col-md-12">	
+		<form class="form-inline">
+		  <div class="col-md-4">
+		  <div class="form-group">
+			<input type="text" class="form-control" id="cityName" placeholder="City Name">
+		  </div>
+		</div>
+	  <div class="col-md-4">
+		  <div class="form-group">
+			<input type="text" class="form-control" id="postalCode" placeholder="Postal Code (A0A 0A0)">
+		  </div>
+		</div>
+		<div class="col-md-4">
+		  <div class="form-group">
+			<div class="input-group">
+			  <input type="text" class="form-control" placeholder="Residence Name" aria-describedby="basic-addon2">
+				<div class="input-group-btn"><button type="submit" class="btn btn btn-warning submit" style="color:black; letter-spacing:1px; font-weight:bold;">Search <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+				</div>
+			</div>
+			</div></div>
+		</form>	
+		</div>
+	</div> 
+	</div>
+</div><!-- / Search Bar-->
+<!-- =========================
+Sub Layouts - START
+============================== -->
+<div class="container">
+	<div class="row">
+	  <div class="col-md-12"></div>
+	</div>
+	<div class="row border-between">
+			<div class="col-md-3">&nbsp;
+			
+    		<div class="btn-group-vertical leftPropNav hidden-print" role="group" aria-label="leftNavigation">
+				<div class="btn btn-default">
+					  <a href="layout.html"><span class="glyphicon glyphicon-home"></span><span class="nameText">Overview</span></a>
+				</div>
+				<div class="btn btn-default">
+				  <a href="layout-res-photos.html"><span class="glyphicon glyphicon-picture"></span><span class="nameText">Photos</span></a>
+				</div>
+				<div class="btn btn-primary">
+				  <a href="layout-res-virt.html"><span class="glyphicon glyphicon-facetime-video"></span><span class="nameText">Virtual Tour</span></a>
+				</div>
+				<div class="btn btn-default">
+				  <a href="layout-res-service.html"><span class="icomoon icon-care"></span><span class="nameText">Service Levels</span></a>
+				</div>
+				<div class="btn btn-default">
+				  <a href="layout-res-dining.html"><span class="glyphicon glyphicon-cutlery"></span><span class="nameText">Dining Services</span></a>
+				</div>
+				<div class="btn btn-default">
+				  <a href="layout-res-wellness.html"><span class="icomoon icon-wellness"></span><span class="nameText">Wellness Services</span></a>
+				</div>
+				<div class="btn btn-default">
+				  <a href="layout-res-activities.html"><span class="icomoon icon-active-living-2"></span><span class="nameText">Activities</span></a>
+				</div>
+				<div class="btn btn-default">
+				  <a href="layout-res-amenities.html"><span class="icomoon icon-amenities"></span><span class="nameText">Amenities</span></a>
+				</div>
+				<div class="btn btn-default">
+				  <a href="layout-res-neighbourhood.html"><span class="icomoon icon-neighbourhood"></span><span class="nameText">Neighbourhood</span></a>
+				</div>
+				<div class="btn btn-default">
+				  <a href="layout-res-map.html" type="button"><span class="glyphicon glyphicon-map-marker"></span><span class="nameText">Map</span></a>
+				</div>
+				<div class="btn btn-default">
+				  <a href="#" type="button"><span class="glyphicon glyphicon-star"></span><span class="nameText">Review &amp; Ratings</span></a>
+				</div>
+			</div>
+			
+			</div>
+			 <h3 class="hidden-md hidden-lg text-center resPhoneMob"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 778-376-2002</h3>
+			<div class="col-md-7">
+				<h1 class="resName">Chartwell Ridgepointe Retirement Residence</h1>
+				<address class="resAddress">1789 Primrose Court, Kamloops, British Columbia V1S 0B7</address>
+				<blockquote class="resQuote blockquote">“Independent lifestyle combining convenient services and personal support options with stunning nature views”</blockquote>
+				
+<div class="embed-responsive embed-responsive-16by9"><iframe frameborder="0" id="widget2" src="https://www.youtube.com/embed/cpbq-XOZeJI?rel=0&amp;iv_load_policy=3&amp;enablejsapi=1" width="100%"></iframe>
+</div>
+				
+				
+				
+				
+				
+					
+		<!-- print and PDF bar 
+				<div class="resBottomBar hidden-print">
+					<ul><li class="col-xs-12 col-sm-6 resPdfBut"><a href="#"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>  Download Property Brochure </a></li><li class="col-xs-12 col-sm-6 resPrintBut"><a href="#"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>  Click Here To Print</a></li></ul></div>-->
+					
+			</div><!-- / central column - col-md-7 -->
+			<div class="col-md-2 hidden-print">&nbsp;
+				<div class="panel panel-primary resForm">
+					<div class="panel-heading">
+						<div class="panel-title text-center"><h5>Questions about living at this residence?</h5>
+							<h4><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 778-376-2002</h4>
+						</div>
+				  </div>
+					<div class="resFormImg"><img src="/Portals/_default/Skins/Bootstrap-3/img/call-centre.jpg" class="img-responsive" alt="call centre"/></div>
+				  <div class="panel-body">
+					  <div class="form-group">
+						<label for="firstName">First Name*</label>
+						<input type="text" class="form-control" id="firstName" placeholder="First Name">
+					  </div>
+					  <div class="form-group">
+						<label for="firstName">Last Name</label>
+						<input type="text" class="form-control" id="lastName" placeholder="Last Name">
+					  </div>
+					  <div class="form-group">
+						<label for="phoneNumber">Phone Number</label>
+						<input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number">
+					  </div>
+					  <div class="form-group">
+						<label for="emailAddress">Email*</label>
+						<input type="email" class="form-control" id="emailAddress" placeholder="Email">
+					  </div>
+					  <div class="form-group">
+						<label for="questions">Questions</label>
+						<textarea class="form-control" id="questions" rows="3"></textarea>
+					  </div>
+					  <small>Do you wish to receive event invitations and other information about our services? *</small>
+					  <div class="row">
+					  <div class="col-md-6">
+					  <div class="form-group">
+						<div class="radio">
+						  <label>
+							<input type="radio" name="blankRadio" id="formYes" value="Yes" aria-label="SignUpForm">
+							Yes
+						  </label>
+						</div>
+					  </div>
+					  </div>
+					  <div class="col-md-6">
+					  <div class="form-group">
+						<div class="radio">
+						  <label>
+							<input type="radio" name="blankRadio" id="formNo" value="No" aria-label="SignUpForm">
+							No
+						  </label>
+						</div>
+					  </div>
+					  </div>
+					  </div>
+					  
+					  
+					  
+  <button type="submit" class="btn btn-warning">Submit</button>
+				  </div>
+				
+				</div>
+			</div><!-- / right column -->
+		</div>
+</div>
+<div class="container-fluid nearby hidden-print">
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<div class="panel panel-info">
+			  <div class="panel-heading">
+				<h3 class="panel-title">Chartwell Kamloops Retirement Residence</h3>
+			  </div>
+			  <img src="http://dnnstage/portals/0/Images/Chartwell%20Kamloops%20Retirement%20Residence.jpg" />
+			  <div class="panel-body">
+				628 Tranquille Road <br>
+				Kamloops British Columbia <br>
+				V2B 3H6 
+			  </div>
+				<div class="panel-footer"><h4><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 778-376-2000</h4> 
+					<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Distance: 5.34 KM</p>
+  				</div>
+			</div><!-- / panel -->
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<div class="panel panel-info">
+			  <div class="panel-heading">
+				<h3 class="panel-title">Chartwell Kamloops Retirement Residence</h3>
+			  </div>
+			  <img src="http://dnnstage/portals/0/Images/Chartwell%20Carrington%20Place%20Retirement%20Residence.jpg" />
+			  <div class="panel-body">
+				628 Tranquille Road <br>
+				Kamloops British Columbia <br>
+				V2B 3H6 
+			  </div>
+				<div class="panel-footer"><h4><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 778-376-2000</h4> 
+					<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Distance: 5.34 KM</p>
+  				</div>
+			</div><!-- / panel -->
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<div class="panel panel-info">
+			  <div class="panel-heading">
+				<h3 class="panel-title">Chartwell Carrington Place Retirement Residence</h3>
+			  </div>
+			  <img src="http://dnnstage/portals/0/Images/Chartwell%20Chatsworth%20Senior%20Bungalows.jpg" />
+			  <div class="panel-body">
+				628 Tranquille Road <br>
+				Kamloops British Columbia <br>
+				V2B 3H6 
+			  </div>
+				<div class="panel-footer"><h4><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 778-376-2000</h4> 
+					<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Distance: 5.34 KM</p>
+  				</div>
+			</div><!-- / panel -->
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<div class="panel panel-info">
+			  <div class="panel-heading">
+				<h3 class="panel-title">Chartwell Chatsworth Retirement Residence</h3>
+			  </div>
+			  <img src="http://dnnstage/portals/0/Images/Chartwell%20Chatsworth%20Retirement%20Residence.jpg" />
+			  <div class="panel-body">
+				628 Tranquille Road <br>
+				Kamloops British Columbia <br>
+				V2B 3H6 
+			  </div>
+				<div class="panel-footer"><h4><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 778-376-2000</h4> 
+					<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Distance: 5.34 KM</p>
+  				</div>
+			</div><!-- / panel -->
+		</div>
+	</div>
+</div>
+</div><!-- / nearby -->
+ <!-- =========================
+/ Sub Layouts - END
+============================== -->
+
+<footer class="container-fluid hidden-print">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h4>Chartwell</h4>
+				<ul>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Mission, Vision &amp; Values</a></li>
+					<li><a href="#">Leadership Team</a></li>
+					<li><a href="#">Corporate Social Responsibility</a></li>
+					<li><a href="#">Subscribe</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h4>Living at Chartwell</h4>
+				<ul>
+					<li><a href="#">Searching for Self</a></li>
+					<li><a href="#">Searching for Loved One</a></li>
+					<li><a href="#">Care Options</a></li>
+					<li><a href="#">Move-in Process</a></li>
+					<li><a href="#">Active Living</a></li>
+					<li><a href="#">Chartwell Blog</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h4>Careers</h4>
+				<ul>
+					<li><a href="#">Our Mission, Vision and Values</a></li>
+					<li><a href="#">Culture at Chartwell</a></li>
+					<li><a href="#">Current Opportunities</a></li>
+					<li><a href="#">Recruitment Video</a></li>
+					<li><a href="#">Recognition</a></li>
+					<li><a href="#">Volunteer Opportunities</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h4>Investor relations</h4>
+				<ul>
+					<li><a href="#">Corporate Profile</a></li>
+					<li><a href="#">Distribution Information</a></li>
+					<li><a href="#">Press Release</a></li>
+					<li><a href="#">Financial Information</a></li>
+					<li><a href="#">Presentations / Conference calls</a></li>
+					<li><a href="#">Analyst Coverage</a></li>
+				</ul>
+			</div>
+		</div><!-- / row -->
+		<div class="row">
+			<hr />
+			<div class="col-xs-12 col-md-6">
+				<p>Material Copyright © 2009-2018 | Chartwell Master Care LP<br>
+					<a href="#">Website Terms of Use</a> | <a href="#">Website Privacy Statement</a> | <a href="#">Accessibility</a></p>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<ul class="socialBar">
+					<li><a href="#"><img src="img/social-instagram.png" alt="Chartwell Instagram" /></a></li>
+					<li><a href="#"><img src="img/social-google.png" alt="Chartwell Google PLus" /></a></li>
+					<li><a href="#"><img src="img/social-linkedin.png" alt="Chartwell LinkedIn" /></a></li>
+					<li><a href="#"><img src="img/social-youtube.png" alt="Chartwell Youtube" /></a></li>
+					<li><a href="#"><img src="img/social-facebook.png" alt="Chartwell Facebook" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</footer>
+
+
+</body>
+</html>
